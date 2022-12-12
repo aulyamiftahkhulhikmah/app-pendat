@@ -146,14 +146,14 @@ with tab4:
 with tab5:
         st.subheader("Form Implementasi")
         with st.form("my_form"):
-            Age = st.slider('Usia pasien', 24, 89)
-            BMI = st.slider('Body Mass Index (BMI) atau Indeks Massa Tubuh (IMT)', 18.4, 38.6)
-            Glucose = st.slider('kadar gula dalam tubuh', 60, 201)
-            Insulin = st.slider('mengontrol kadar gula dalam darah', 2.43, 58.5)
-            HOMA = st.slider('Homeostatic model assessment (HOMA) untuk menilai fungsi sel pankreas', 0.47, 25.1)
-            Leptin = st.slider('hormon yang dibuat oleh sel lemak untuk mengendalikan nafsu makan serta rasa lapar', 4.31, 90.3)
-            Adiponectin = st.slider('suatu protein yang spesifik disekresikan oleh adiposit dengan peran pada homeostasis glukosa dan lemak', 1.66, 38.00)
-            Resestin = st.slider('hormon yang disebut-sebut menyebabkan obesitas', 3.21, 82.1)
+            Age = st.slider('Usia', 24, 89)
+            BMI = st.slider('Body Mass Index (BMI)(kg/m2)', 18.4, 38.6)
+            Glucose = st.slider('Glucose(mg/dL)', 60, 201)
+            Insulin = st.slider('Insulin (µU/mL)', 2.43, 58.5)
+            HOMA = st.slider('HOMA', 0.47, 25.1)
+            Leptin = st.slider('Leptin (ng/mL)', 4.31, 90.3)
+            Adiponectin = st.slider('Adiponectin (µg/mL)', 1.66, 38.00)
+            Resestin = st.slider('Resestin(ng/mL)', 3.21, 82.1)
             MCP= st.slider('MCP-1(pg/dL)', 45.8, 17000.00)
             model = st.selectbox('Model untuk prediksi',
                     ('Gaussian Naive Bayes', 'K-NN', 'Decision Tree'))
